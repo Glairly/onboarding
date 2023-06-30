@@ -34,6 +34,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run build
         run: |
+          cd sample-app
           set BUILD_PATH='../dist' 
           npm run react-scripts build
       
