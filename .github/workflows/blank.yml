@@ -36,7 +36,7 @@ jobs:
         run: |
           cd sample-app
           set BUILD_PATH='../dist' 
-          npm run react-scripts build
+          npm run build-prod
       
       - name: Deploy
         run: |
