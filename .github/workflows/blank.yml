@@ -15,6 +15,17 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+
+  init:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Init
+        run: |
+          echo Should do some init job
+
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
@@ -37,7 +48,11 @@ jobs:
           cd sample-app
           set BUILD_PATH='../dist' 
           npm run build-prod
-      
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
       - name: Deploy
         run: |
           echo This should deploy
