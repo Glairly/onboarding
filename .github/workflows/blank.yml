@@ -46,7 +46,6 @@ jobs:
       - name: Run build
         run: |
           cd sample-app
-          set BUILD_PATH='../dist' 
           npm run build-prod
 
   deploy:
