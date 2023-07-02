@@ -1,4 +1,1 @@
 # onboarding
-<hr />
-
-Yo
