@@ -1,3 +1,3 @@
 # onboarding
 
-yo 2
+yo
